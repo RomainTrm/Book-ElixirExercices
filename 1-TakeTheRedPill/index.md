@@ -1,4 +1,4 @@
-# Take the red pill
+# 1. Take the red pill
 
 Elixir is a functional programming language, meaning you (as a developer) write small chunks of code (functions) and then compose them.  
 It can be convenient to see functions as data transformers. You process a succession of transformation to achieve your desired goal.  

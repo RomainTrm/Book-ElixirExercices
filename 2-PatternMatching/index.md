@@ -1,4 +1,4 @@
-# Pattern matching
+# 2. Pattern matching
 
 ## Assignments and equality
 
