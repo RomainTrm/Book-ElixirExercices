@@ -281,16 +281,16 @@ Return values instead of setting variables inside a block:
 ```elixir
 # Bad
 case integer do
-    1 => atom = :one
-    2 => atom = :two
+  1 => atom = :one
+  2 => atom = :two
 end
 
 # Ok
 atom = 
-    case integer do
-        1 => :one
-        2 => :two
-    end
+  case integer do
+    1 => :one
+    2 => :two
+  end
 ```
 
 ### The with expression
