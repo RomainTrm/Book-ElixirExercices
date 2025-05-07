@@ -26,6 +26,17 @@ iex> swap.({5, 9})
 {9, 5}
 ```
 
+We can reuse the same name for distinct variables in a pattern, in such case variables must be equal:  
+
+```elixir
+iex> test = fn {a, a} -> a end
+#Function<42.81571850/1 in :erl_eval.expr/6>
+iex> test.({1, 1})
+1
+iex> test.({1, 2})
+** (FunctionClauseError) no function clause matching in :erl_eval."-inside-an-interpreted-fun-"/1
+```
+
 ## One function, multiple bodies
 
 We can define multiple bodies with distinct arguments (**warning**: each function body must have the same number of parameters.):  
