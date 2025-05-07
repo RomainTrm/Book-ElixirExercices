@@ -266,7 +266,7 @@ list1 ++ list2  # contains two lists
 list1 -- list2 # remove elements of list2 from a copy of list1
 ```
 
-The *in* operator: 
+The *in* operator:  
 
 ```elixir
 a in enum # test if a is in a list, a range, a map. For maps, a should be a {key, value} tuple.
