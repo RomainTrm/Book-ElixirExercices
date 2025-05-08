@@ -5,10 +5,10 @@ defmodule MyList do
     end
 
     # Exercice 7
-    def primeNumbers(n) do 
-        for number <- 2..n, 
+    def primeNumbers(n) do
+        for number <- 2..n,
             2..n
-            |> Enum.to_list 
+            |> Enum.to_list
             |> Enum.filter(&(&1 != number))
             |> Enum.all?(&(rem(number,&1) != 0)),
             do: number
@@ -25,8 +25,8 @@ defmodule MyList do
     end
 
     def applyTaxes(orders) do
-        orders 
-        |> Enum.map (fn order -> 
+        orders
+        |> Enum.map (fn order ->
             total_amount = applyTaxe(order[:ship_to], order[:net_amount])
             order++[total_amount: total_amount]
             end)
@@ -38,4 +38,5 @@ defmodule MyList do
             [id: 124, ship_to: :OK, net_amount: 100.00 ],
             [id: 125, ship_to: :TX, net_amount: 100.00 ]
         ]
+    end
 end
