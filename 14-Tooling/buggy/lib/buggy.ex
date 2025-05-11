@@ -3,10 +3,11 @@ defmodule Buggy do
     <<
       format::integer-16,
       tracks::integer-16,
-      division::bits-16
+      division::bits-16 # fixed version
+      # division::integer-16 # buggy version
       >>
   ) do
-    # iex --werl, run, breakpoint arrive dans pry : binding pour afficher les valeurs, continue pour continuer
+    # iex --werl, run, breakpoint starts pry : use `binding` to display variables values, `continue` to resume
     # require IEx; IEx.pry
     IO.puts("format: #{format}")
     IO.puts("tracks: #{tracks}")
