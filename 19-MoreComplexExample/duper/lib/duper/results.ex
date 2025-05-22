@@ -25,9 +25,9 @@ defmodule Duper.Results do
   def handle_cast({:add, path, hash}, results) do
     results = Map.update(
       results,
-      hash,
-      [ path ],
-      fn paths -> [path|paths] end)
+      hash,                          # key of the entry
+      [ path ],                      # if not found, store this value
+      fn paths -> [path|paths] end)  # else update the existing value
     { :noreply, results }
   end
 
