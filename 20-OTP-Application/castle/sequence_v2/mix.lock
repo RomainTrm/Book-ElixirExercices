@@ -1,4 +1,0 @@
-%{
-  "castle": {:hex, :castle, "0.3.1", "e5d4f20696d878052a23c13158e1d372b24d9b30a6ea6f52fa6063c21c5ad67e", [:mix], [{:forecastle, "~> 0.1.3", [hex: :forecastle, repo: "hexpm", optional: false]}], "hexpm", "3ee9ca04b069280ab4197fe753562958729c83b3aa08125255116a989e133835"},
-  "forecastle": {:hex, :forecastle, "0.1.3", "b07d217ef10799e6d6cc7e47407858e77b1a8cb248f15185534de3403de3aa42", [:mix], [], "hexpm", "07e1ffa79c56f3e0ead59f17c0163a747dafc210ca8f244a7e65a4bfa98dc96d"},
-}
