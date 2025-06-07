@@ -5,7 +5,7 @@ end
 
 defmodule Caesar.Cypher do
   def encrypt(string, shift) do
-    string |> Enum.map (&cypher(&1, shift))
+    string |> Enum.map(&cypher(&1, shift))
   end
 
   defp cypher(letter, 0), do: letter
@@ -26,11 +26,11 @@ end
 IO.puts Caesar.root13("ryvkve")
 # => elixir
 
-IO.puts Caesar.root13('ryvkve')
+IO.puts Caesar.root13(~c"ryvkve")
 # => elixir
 
 IO.puts Caesar.encrypt("ryvkve", 13)
 # => elixir
 
-IO.puts Caesar.encrypt('ryvkve', 13)
+IO.puts Caesar.encrypt(~c"ryvkve", 13)
 # => elixir
