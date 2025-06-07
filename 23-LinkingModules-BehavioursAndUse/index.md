@@ -1,6 +1,6 @@
 # 23. Linking modules: Behavio(u)rs and use
 
-When declaring OTP servers, we used the `use GenServer` notation. This is how inject behaviors.
+When declaring OTP servers, we used the `use GenServer` notation. This is how we inject behaviors.
 
 ## Behaviors
 
