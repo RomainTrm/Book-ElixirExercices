@@ -124,7 +124,7 @@ tock
 
 ## Input, output, PIDs and nodes
 
-In Elixir, we identify an open file or device by the PID of tis I/O server.  
+In Elixir, we identify an open file or device by the PID of his I/O server.  
 Default device it uses is returned by the function `:erlang.group_leader`.  
 
 ```elixir
